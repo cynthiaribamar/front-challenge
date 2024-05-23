@@ -8,10 +8,7 @@ export function splitPrice(
         priceArr.splice(1, 0, ".");
         return priceArr.join("");
 
-    } else if (priceArr.length > 4) {
-        priceArr.splice(1, 0, ".");
-        return priceArr.join("");
+    } 
 
-    } else
-        return price
+    return priceArr
 }
