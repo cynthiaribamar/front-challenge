@@ -1,0 +1,75 @@
+@import "@/styles/variables";
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $blue1;
+    color: $white;
+    height: 48px;
+    padding-inline: 20px;
+
+    b {
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 44;
+        gap: 8px;
+    }
+
+    .cartBtn {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        color: $black;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 8px;
+        width: 52px;
+        height: 26px;
+        padding-inline: 8px;
+        background-color: $white;
+    }
+
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .header {
+        height: 101px;
+        padding-left: 65px;
+        padding-right: 88px;
+
+        b {
+            font-size: 40px;
+        }
+
+        span {
+            font-size: 20px;
+            align-items: baseline;
+        }
+
+        .cartBtn {
+            justify-content: center;
+            font-size: 18px;
+            width: 90px;
+            height: 45px;
+
+            .icon {
+                height: 18px;
+                width: 19px;
+            }
+        }
+    }
+}
+
+@media(min-width: $breakpoint-desktop) {
+    .header {
+        padding-left: calc((100% - 1206px) / 2) !important;
+        padding-right: calc((100% - 1206px) / 2) !important;
+    }
+}
