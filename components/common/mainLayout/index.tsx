@@ -1,7 +1,7 @@
 import { Header } from "@/components/common/header";
 import { Footer } from "../footer";
 import React from "react";
-import { LayoutProps } from "types/common.ts";
+import { LayoutProps } from "@/types/common";
 export const MainLayout = ({
     children
 }: LayoutProps) => {
