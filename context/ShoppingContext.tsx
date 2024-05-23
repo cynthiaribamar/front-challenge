@@ -15,8 +15,6 @@ export const ShoppingProvider = ({ children }: LayoutProps) => {
     const [values, setValues] = useState<Array<number>>([])
 
     useEffect(() => {
-        console.log("Values updated:", values);
-        console.log(isLoading)
     }, [values]);
 
 

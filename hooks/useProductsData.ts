@@ -7,16 +7,6 @@ export function UseProductsData(){
         queryKey: ['products-data']
     })
 
-    console.log(data)
-    const teste = {
-        ...data,
-        data: data,
-        isLoading
-    };
-
-    console.log(teste)
-
-
     return {
         ...data,
         data: data,

@@ -11,18 +11,6 @@ const createJestConfig = nextJest({
   dir: './',
 });
 
-// const jestConfig = async () => {
-//   const nextJestConfig = await createJestConfig(config)();
-//   return {
-//     ...nextJestConfig,
-//     moduleNameMapper: {
-//       // Workaround to put our SVG stub first
-//       "\\.svg": "<rootDir>/app/assets/cart.svg",
-//       ...nextJestConfig.moduleNameMapper,
-//     },
-//   };
-// };
-
 const config: Config = {
   clearMocks: true,
   collectCoverage: true,

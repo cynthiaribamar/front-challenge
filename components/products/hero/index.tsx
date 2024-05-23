@@ -24,7 +24,6 @@ export const Hero = () => {
         if (indexOfItem === -1) {
             setCart && setCart([...cart!, Product])
             setValues!([...values!, parseFloat(Product!.price!.toString())])
-            console.log(values)
         }
     }
 
